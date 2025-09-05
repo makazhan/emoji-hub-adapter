@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Emoji Hub</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Emojiland!</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍳</text></svg>">
+  <style>
+    body {
+      margin: 0;
+      background-color: #fbeeca;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: Arial, sans-serif;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    h1 span {
+      color: #ff9900;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    a.button {
+      padding: 0.75rem 1.5rem;
+      background-color: #ff9900;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: background-color 0.2s;
+    }
+    a.button:hover {
+      background-color: #cc7a00;
+    }
+  </style>
+</head>
+<body>
+  <h1>Do you feel <span>emojized</span>?</h1>
+  <p>Dive into the world of emojis and find your vibe!</p>
+  <a href="/emojis.html" class="button">Browse Emojis →</a>
+</body>
 </html>
