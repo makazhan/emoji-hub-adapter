@@ -9,14 +9,16 @@ Emoji Hub Adapter — это учебный проект, представляю
 1. Склонируйте репозиторий:
 
    ```bash
-   git clone https://github.com/<ваш_логин>/emoji_hub.git
+   git clone https://github.com/makazhan/emoji-hub-adapter.git
    cd emoji_hub
    ```
 
 2. Соберите и запустите проект в Docker:
 
    ```bash
-   docker compose up --build
+   docker build -t emoji_hub_adapter .
+
+   docker run -d --name emoji_hub_adapter -p 8000:8000 emoji_hub_adapter
    ```
 
 3. Приложение будет доступно по адресу:
